@@ -13,13 +13,9 @@ MAINTAINER Tony Lv
 RUN echo "deb http://archive.ubuntu.com/ubuntu/ $(lsb_release -sc) main universe" >> /etc/apt/sources.list
 
 # Update the sources list
-RUN apt-get update
-
-# Install basic applications
-RUN apt-get install -y tar git curl nano wget dialog net-tools build-essential
-
-# Install Python and Basic Python Tools
-RUN apt-get install -y python python-dev python-distribute python-pip
+RUN apt-get update && apt-get install -y \
+    tar git curl nano wget dialog net-tools build-essential \
+    python python-dev python-distribute python-pip
 
 # Copy the application folder inside the container
 ADD /webpy_server /webpy_server
