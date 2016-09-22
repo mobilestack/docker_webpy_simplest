@@ -1,1 +1,1 @@
-# docker_webpy_simplestgit clone git@github.com:mobilestack/docker_webpy_simplest.git webpy_server
+# docker_webpy_simplest## clone the whole directory into your server`git clone git@github.com:mobilestack/docker_webpy_simplest.git webpy_server`## build your docker image`docker build -f ./webpy_server/Dockerfile -t webpy_server_image .`## run your docker containerdocker run --name simplest_webpy -p 80:80 -i -t webpy_server_image
