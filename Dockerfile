@@ -7,10 +7,8 @@
 FROM ubuntu
 
 # File Author / Maintainer
-MAINTAINER Tony Lv
+MAINTAINER Tony 
 
-# Add the application resources URL
-# RUN echo "deb http://archive.ubuntu.com/ubuntu/ $(lsb_release -sc) main universe" >> /etc/apt/sources.list
 
 # Update the sources list
 RUN apt-get update && apt-get install -y \
@@ -27,9 +25,9 @@ RUN pip install -r /webpy_server/requirements.txt
 EXPOSE 80
 
 # Set the default directory where CMD will execute
-WORKDIR /webpy_server
+#WORKDIR /webpy_server
 
 # Set the default command to execute    
 # when creating a new container
-CMD python index.py
+#CMD python index.py
 
