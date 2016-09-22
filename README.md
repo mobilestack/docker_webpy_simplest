@@ -2,17 +2,17 @@
 
 ## Usage:
 
-clone the whole directory into your server
+- clone the whole directory into your server
 
 
 `git clone git@github.com:mobilestack/docker_webpy_simplest.git webpy_server`
 
 
-build your docker image, from d docker file and give it a tag name, and specify the location
+- build your docker image, from d docker file and give it a tag name, and specify the location
 
 `docker build -f ./webpy_server/Dockerfile -t webpy_server_image .`
 
-run your docker container from one of these methods:
+- run your docker container from one of these methods:
 
  a) with name to the container
 
