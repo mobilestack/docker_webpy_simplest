@@ -22,8 +22,10 @@ class index:
     def GET(self):
         return "Hello, world!"
     def POST(self):
-	data = web.input()
-	return "received post %s" % data
+	data = web.data()
+	input = web.input()
+	logging.debug('input is %s' % input)
+	return "received post data %s" % data
 
 if __name__ == '__main__' :
     app = web.application(urls, globals())
