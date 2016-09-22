@@ -1,1 +1,1 @@
-# docker_webpy_simplest
+# docker_webpy_simplestgit clone git@github.com:mobilestack/docker_webpy_simplest.git webpy_server
